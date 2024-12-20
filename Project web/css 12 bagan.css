@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+/* Smooth scrolling behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header styles */
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(gambar/stars-night\ bg\ zodiak.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Navbar styles */
+.navbar-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: top 0.3s; 
+    overflow: hidden
+    
+
+}
+
+/* Active scrolling */
+.navbar.scrolling-active {
+    background-color: rgb(225, 0, 255);
+    padding: 30px 0;
+}
+
+/* Menu bar */
+.menu-bar {
+    color: white;
+    font-size: 24px;
+    display: none;
+}
+
+/* Navbar list */
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 0 40px;
+    position: relative;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.navbar ul li a {
+    font-family: PlayFair Display, Arial, Helvetica, sans-serif;;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border: 3px solid transparent;
+    padding: 10px 15px;
+  }
+
+.navbar ul li a:hover {
+    color: #a6deff;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 4px;
+    width: 0;
+    background: #a6deff;
+    position: absolute;
+    left: 7%;
+    bottom: -10px;
+    transition: width 0.4s ease;
+}
+
+.navbar ul li:hover::after {
+    width: 90%;
+}
+
+/* Content styles */
+.content {
+    width: 85%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.logo img {
+    width: 60%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Title styles */
+.tanggal-zodiak h1 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+/* Text styles */
+.text2 {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+/* Zodiak styles */
+.zodiak {
+    width: 85%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* Zodiak card styles */
+.zodiak-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+}
+
+.zodiak-card {
+    width: calc(25% - 20px);
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(195, 0, 255, 0.2);
+}
+
+.zodiak h1 {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Zodiak image styles */
+.zodiak-image img:last-child {
+    align-self: flex-end; 
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.zodiak-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Zodiak character section */
+.tokoh-zodiak {
+    width: 85%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tokoh-zodiak .zodiak-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tokoh-zodiak .zodiak-card {
+    width: calc(50% - 20px);
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(195, 0, 255, 0.2);
+}
+
+.tokoh-zodiak h1 {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tokoh-zodiak .zodiak-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.tokoh-zodiak .zodiak-image img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer styles */
+.footer {
+    padding: 50px 0 50px 0;
+    background-color: #673567;
+  }
+  
+  .footer .box-footer {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    column-gap: 100px;
+    align-items: center;
+  }
+  
+  .footer .box-footer .box {
+    color: white;
+  }
+  
+  .footer .box-footer .box p {
+    font-weight: 200;
+  }
+  
+  .footer .box-footer .box:nth-child() p {
+    font-size: 12px;
+    line-height: 2;
+    margin-top: 10px;
+  }
+  
+  .footer .box-footer .box:nth-child(2) span {
+    font-weight: bold;
+  }
+  
+  .footer .box-footer .box:nth-child(2) {
+    text-align: center;
+  }
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+    .navbar ul li {
+        margin: 0 20px;
+    }
+
+    .content {
+        padding-top: 150px;
+    }
+
+    .zodiak-card {
+        width: calc(33.33% - 20px);
+    }
+
+    .tokoh-zodiak .zodiak-card {
+        width: calc(50% - 20px);
+    }
+}

@@ -1,0 +1,324 @@
+/* Mengimpor font PlayFair Display dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: PlayFair Display, Arial, Helvetica, sans-serif;
+  color: #fff;
+  /* Menggunakan font PlayFair Display sebagai default dan warna teks putih */
+}
+
+/* Mengatur perilaku scroll ke smooth untuk seluruh halaman HTML */
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(gambar/stars-night\ bg\ zodiak.gif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Gaya untuk bagian banner */
+
+
+/* Gaya untuk navigasi */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar.scrolling-active {
+  background-color: rgb(225, 0, 255);
+  padding: 30px 0 30px 0;
+}
+
+.menu-bar {
+  color: white;
+  font-size: 24px;
+  display: none;
+}
+
+.navbar ul {
+  list-style: none;
+  /* Menghilangkan default list style */
+}
+
+.navbar ul li {
+  display: inline-block;
+  /* Menampilkan menu secara horizontal */
+  margin: 0 40px;
+  /* Jarak antar menu */
+  position: relative;
+  /* Digunakan untuk membuat efek hover */
+}
+
+.navbar ul li a {
+  font-family: PlayFair Display, Arial, Helvetica, sans-serif;;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  border: 3px solid transparent;
+  padding: 10px 15px;
+}
+
+.navbar ul li a:hover {
+  color: #a6deff;
+  /* Mengubah warna teks saat dihover */
+}
+
+.navbar ul li::after {
+  content: '';
+  /* Menambahkan elemen setelah */
+  height: 4px;
+  /* Tinggi garis bawah */
+  width: 0;
+  /* Lebar awal garis bawah */
+  background: #a6deff;
+  /* Warna garis bawah */
+  position: absolute;
+  /* Menempatkan garis bawah secara absolut */
+  left: 2%;
+  /* Posisi horizontal awal garis bawah */
+  bottom: -10px;
+  /* Posisi vertikal awal garis bawah */
+  transition: width 0.4s ease;
+  /* Efek transisi saat dihover */
+}
+.navbar ul li:hover::after {
+  width: 100%;
+  /* Lebar garis bawah saat dihover */
+}
+.zodiak h1 {
+
+  color: #fff;
+  text-transform: uppercase;
+  border: 3px solid transparent;
+  padding: 2px 3px;
+  position: relative;
+}
+
+.content h1:hover {
+  color: #a6deff;
+  transition: width 2s ease;
+
+}
+
+
+
+/* Gaya untuk konten */
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  margin-top: 80px;
+}
+
+/* Gaya untuk logo */
+.logo img {
+  width: 200px;
+  /* Lebar logo */
+  height: auto;
+  /* Tinggi logo menyesuaikan */
+  border-radius: 100%;
+  /* Membuat logo terlihat bulat */
+  margin-bottom: 50px;
+  /* Jarak antara logo dan teks */
+}
+
+/* Gaya untuk teks */
+.text h1 {
+  font-size: 36px;
+  /* Ukuran font h1 */
+  margin-bottom: 20px;
+  /* Jarak antara h1 dan p */
+}
+
+.text p {
+  font-size: 18px;
+  /* Ukuran font paragraf */
+  color: #999;
+  /* Warna teks */
+  margin-bottom: 40px;
+  /* Jarak antara p dan elemen selanjutnya */
+}
+
+/* Gaya untuk bagian zodiak */
+.zodiak {
+  width: 100%;
+  padding: 70px 0;
+  /* Padding atas dan bawah */
+  margin-top: 600px;
+  /* Jarak atas dari zodiak ke konten sebelumnya */
+}
+
+/* Gaya untuk kontainer zodiak */
+.zodiak .zodiak-box {
+  width: 95%;
+  /* Lebar kontainer zodiak */
+  margin: 0 auto;
+  margin-left: 115px;
+  /* Posisi horizontal tengah */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+/* Gaya untuk info zodiak */
+.zodiak-info {
+  text-align: center;
+  /* Membuat teks berada di tengah */
+}
+
+/* Gaya untuk judul zodiak */
+.zodiak h1 {
+  font-size: 50px;
+  /* Ukuran font judul zodiak */
+  margin-top: 250px;
+  /* Jarak atas dari judul zodiak */
+  align-items: center;
+  /* Membuat judul zodiak berada di tengah secara horizontal */
+  width: auto;
+  /* Lebar judul zodiak menyesuaikan */
+  justify-content: center;
+  /* Membuat judul zodiak berada di tengah secara horizontal */
+  text-align: center;
+  /* Membuat judul zodiak berada di tengah */
+}
+
+/* Gaya untuk judul zodiak info */
+.zodiak-info h2 {
+  font-size: 24px;
+  /* Ukuran font judul zodiak info */
+  margin-bottom: 10px;
+  /* Jarak antara judul zodiak info dan paragraf */
+  text-align: center;
+  /* Membuat judul zodiak info berada di tengah */
+  margin-left: 45px;
+}
+
+/* Gaya untuk paragraf zodiak info */
+.zodiak-info p {
+  font-size: 18px;
+  /* Ukuran font paragraf zodiak info */
+  color: #bcb0b0;
+  /* Warna teks */
+  margin-left: 40px;
+}
+
+/* Gaya untuk kartu zodiak */
+.zodiak .zodiak-box .zodiak-card {
+  width: 325px;
+  /* Lebar kartu zodiak */
+  height: 508px;
+  /* Tinggi kartu zodiak */
+  padding-top: 10px;
+  /* Padding atas kartu zodiak */
+  margin-bottom: 20px;
+  /* Jarak antara kartu zodiak */
+  box-shadow: 0 0 30px rgba(195, 0, 255, 0.2);
+  margin-top: 20px;
+  /* Bayangan kartu zodiak */
+}
+
+/* Gaya untuk gambar zodiak */
+.zodiak .zodiak-box .zodiak-card .zodiak-image {
+  width: 100%;
+  /* Lebar gambar zodiak */
+  height: 100%;
+  /* Tinggi gambar zodiak */
+  margin-left: -5px;
+}
+
+.zodiak .zodiak-box .zodiak-card .zodiak-image img {
+  width: 90%;
+  margin-left: 40px;
+
+
+}
+
+.zodiak .zodiak-box .zodiak-card .zodiak-image:hover img {
+  transform: scale(1.1);
+}
+
+.footer {
+  padding: 50px 0 50px 0;
+  background-color: #673567;
+}
+
+.footer .box-footer {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  column-gap: 100px;
+  align-items: center;
+}
+
+.footer .box-footer .box {
+  color: white;
+}
+
+.footer .box-footer .box p {
+  font-weight: 200;
+}
+
+.footer .box-footer .box:nth-child() p {
+  font-size: 12px;
+  line-height: 2;
+  margin-top: 10px;
+}
+
+.footer .box-footer .box:nth-child(2) span {
+  font-weight: bold;
+}
+
+.footer .box-footer .box:nth-child(2) {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar ul li {
+    margin: 0 20px; /* Adjust margin for larger screens */
+  }
+}
+
+/* Media query for desktops */
+@media only screen and (min-width: 992px) {
+  .navbar {
+    width: 80%; /* Adjust width for larger screens */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .zodiak .zodiak-box {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+/* Media query for desktops */
+@media only screen and (min-width: 992px) {
+  .zodiak .zodiak-box {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktops */
+  }
+}
